@@ -1,0 +1,77 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Android Compatibility Check</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <header class="header">
+        <div class="badge" aria-hidden="true">ANDROID</div>
+        <h1>Android Compatibility Check</h1>
+        <p class="sub">
+          Quick verification to continue. This page helps ensure your device and connection are supported.
+        </p>
+      </header>
+
+      <div class="checks" role="list">
+        <div class="check" role="listitem">
+          <div class="icon" aria-hidden="true">📱</div>
+          <div class="txt">
+            <div class="t">Device check</div>
+            <div class="d">Confirming Android support</div>
+          </div>
+          <div class="status" data-status="pending">Pending</div>
+        </div>
+
+        <div class="check" role="listitem">
+          <div class="icon" aria-hidden="true">📍</div>
+          <div class="txt">
+            <div class="t">Region check</div>
+            <div class="d">Verifying availability in your area</div>
+          </div>
+          <div class="status" data-status="pending">Pending</div>
+        </div>
+
+        <div class="check" role="listitem">
+          <div class="icon" aria-hidden="true">⚡</div>
+          <div class="txt">
+            <div class="t">Connection check</div>
+            <div class="d">Measuring response time</div>
+          </div>
+          <div class="status" data-status="pending">Pending</div>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="bar"><span id="barFill" style="width:0%"></span></div>
+        <div class="meta">
+          <span id="progressText">Starting…</span>
+          <span id="percent">0%</span>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="continueBtn" class="btn primary" disabled>
+          Continue
+        </button>
+        <button id="retryBtn" class="btn ghost" type="button">
+          Retry
+        </button>
+      </div>
+
+      <footer class="foot">
+        <p class="fine">
+          By continuing, you confirm you want to proceed to the next step. If you don’t qualify, you may see alternative options.
+        </p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
