@@ -81,8 +81,8 @@ function runChecks() {
 
 continueBtn.addEventListener("click", () => {
   // Basic guard so you don't accidentally launch with placeholder
-  if (!FINAL_URL || FINAL_URL.includes("https://singingfiles.com/show.php?l=0&u=2480508&id=72846")) {
-    alert("https://singingfiles.com/show.php?l=0&u=2480508&id=72846");
+  if (!FINAL_URL || FINAL_URL.includes("YOUR_CPA_GRIP_LINK")) {
+    alert("Paste your CPA Grip link into FINAL_URL in script.js");
     return;
   }
   window.location.href = FINAL_URL;
